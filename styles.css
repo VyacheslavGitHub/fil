@@ -1,0 +1,212 @@
+
+.cards {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	list-style: none;
+	
+	padding: 0;
+	justify-content: space-between;
+}
+@media screen and (max-width: 960px){
+	.cards{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+.cards-item {
+	width: 300px;
+	height: 550px;
+	overflow: hidden;
+	border-bottom: 5px solid #F4A460;
+}
+
+.icon {
+	border: 5px solid yellow;
+	border-radius: 5px;
+	position: relative;
+}
+
+.name:before {
+	content: "Магнус Карлсен";
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	animation: name 4s infinite ease;
+	color: #ffffff;
+	font-weight: 800;
+	font-style: Arial;
+	font-size: 30px;
+}
+
+.kost:before {
+	content: "Александр Костылев";
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	animation: name 4s infinite ease;
+	color: #ffffff;
+	font-weight: 800;
+	font-style: Arial;
+	font-size: 30px;
+}
+
+.bolt:before {
+	content: "Усейн Болт";
+	display: inline-block;
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	animation: name 4s infinite ease;
+	color: #ffffff;
+	font-weight: 800;
+	font-style: Arial;
+	font-size: 30px;
+}
+
+@keyframes name {
+	from {
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.info {
+	padding: 5px;
+	text-align: justify;
+}
+
+.link {
+	display: inline-block;
+	border-radius: 10px;
+	padding: 5px;
+	margin-left: 5px;
+	border: 3px solid #F4A460;
+	text-decoration: none;
+	color: #F4A460;
+	transition: all 1s ease;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.link:hover {
+	color: #ffffff;
+	background-color: #F4A460;
+}
+
+.block {
+	width: 960px;
+	margin: auto;
+	background-color: #ffffff;
+	box-shadow: 15px 15px 15px rgba(0,0,0, 0.5);
+}
+h1{color:#F4A460;
+text-align: center;
+font-size: 70px;
+background-color:aliceblue;
+border: 5px solid #F4A460;}
+
+h3{color:#009999;
+text-align: center;
+
+background-color:aliceblue;
+border: 5px solid #F4A460;
+font-family: fantasy;}
+
+.text{font-family:cursive;
+text-align: justify;
+font-size: 16px;
+background-color:aliceblue;
+color:#F4A460;
+border: 5px solid #F4A460;
+overflow: hidden;
+}
+.slide {
+	transition: all 1s ease;
+}
+.text:hover .slide {
+	transform: translateY(-300px);
+}
+
+body{
+background-image: url(bg.jpg)}
+
+.foto{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.tablica{
+	background-color: gold;
+	padding: 10px;
+}
+
+
+td,th{border:5px solid #009999;
+border-radius: 10px;
+text-align: center;}
+
+table{border-collapse: collapse;
+width:100%;}
+
+.tablemagnus {
+	position: relative;
+}
+.tablemagnus:after{
+content: "В таблице представлены только успешно проведённые турниры чемпиона";
+font-family: Arial;
+letter-spacing: 1.7px;
+display: flex;
+position: absolute;
+width: 150px;
+height: 150px;
+text-align: center;
+align-items: center;
+background-color: red;
+border-radius: 50%;
+font-size: 14px;
+padding: 10px;
+top: -110px;
+right: -110px;
+opacity: 0.8;
+color: #ffffff;
+animation: button 4s infinite ease;
+}
+
+@keyframes button {
+	0% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(50px);
+	}
+	100%{
+		transform: translateY(-50px);	
+	}
+}
+
+.links {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.media{
+	display: inline-block;
+	width: 40px;
+	margin:5px;
+}
+
+.media img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+
